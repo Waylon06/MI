@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    color: rgba(0, 0, 0, .85);
+    font-size: 14px;
+    font-family: "MiSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.login-desktop .left .bg {
+    width: 375px;
+}
+
+.login-desktop .left .bg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* .login-desktop .left::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+} */
+
+.login-desktop .left {
+    float: left;
+    height: auto;
+}
+
+.right .login-header {
+    padding: 20px;
+    height: 40px;
+}
+
+.right .login-header .logo {
+    float: left;
+    height: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.right .login-header .logo img {
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.right .login-header img {
+    height: 40px;
+    width: 40px;
+}
+
+.right .login-header .mi-nav {
+    float: right;
+}
+
+.right .login-header .mi-nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 40px;
+}
+
+.right .login-header .mi-nav span {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ddd;
+    vertical-align: middle;
+    display: inline-block;
+    height: 14px;
+    width: 0;
+}
+
+.right .login-header .mi-nav .language {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 40px;
+}
+
+.right .login-header .mi-nav .language .corner {
+    position: absolute;
+    top: 18px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #838383;
+
+}
+
+.login-desktop .right {
+    width: auto;
+}
+
+.right .login-banner {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.right .login-banner .mi-card {
+    border-radius: 4px;
+    padding: 40px 45px;
+    margin: 0 auto 80px;
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+    /* box-shadow: 0 0 20px rgba(223, 217, 217, 0.803); */
+    display: inline-block;
+    height: 570px;
+    /* width: 360px; */
+    margin-top: 40px;
+    position: relative;
+}
+
+.right .login-banner .mi-card ::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.login-banner .mi-card .qr-code {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-banner .mi-card .qr-code img {
+    height: 80%;
+    width: 80%;
+}
+
+.right .login-banner .mi-card .login-table {
+    width: 360px;
+    color: rgba(0, 0, 0, .85);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-banner .mi-card .login-table .table-nav {
+    margin-bottom: 16px;
+    /* position: absolute;
+    top: 2px;
+    left: 40px; */
+}
+
+.mi-card .login-table .table-nav span {
+    display: block;
+    float: left;
+}
+
+.mi-card .login-table .table-nav span a {
+    margin-right: 20px;
+    font-size: 22px;
+    /* color: #333; */
+    font-weight: 500;
+    display: block;
+    /* float: left; */
+    /* border-bottom: 4px solid #ff5c00;
+    border-radius: 3px; */
+}
+
+.mi-card .login-table .table-nav #login a {
+    color: #333;
+    border-bottom: 4px solid #ff5c00;
+    border-radius: 3px;
+}
+
+.mi-card .login-table .table-nav #register a {
+    color: #BBBBBB;
+}
+
+.mi-card .login-table .table-main::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mi-card .login-table .table-main {
+    padding: 20px 2px 0  2px;
+    height: 316px;
+    position: relative;
+}
+
+.mi-card .login-table .table-main .username {
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    position: absolute;
+    /* top: 60px; */
+    /* left: -40px; */
+    left: 0;
+}
+.login-table .table-main .username input {
+    display: block;
+    height: 60px;
+    width: 350px;
+    padding: 0 5%;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    color: #00000066;
+    /* font-size: 20px; */
+    /* padding: 30px 20px 10px; */
+}
+
+.login-table .table-main .pwd {
+    padding: 20px 0 0 0;
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    position: absolute;
+    top: 80px;
+    /* left: -40px; */
+    left: 0;
+
+}
+
+.login-table .table-main .pwd input {
+    display: block;
+    height: 60px;
+    width: 350px;
+    padding: 0 5%;
+    border-radius: 4px;
+    background: #f9f9f9;
+    border: none;
+    font-size: 17px;
+    color: #00000066;
+    /* font-size: 20px; */
+    /* padding: 30px 20px 10px; */
+}
+
+.login-table .table-main .pwd img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+.login-table .table-main button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 196px;
+    /* left: -40px; */
+    left: 0;
+    padding: 0 20px;
+    border-radius: 4px;
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ffbe99;
+    border: none;
+}
+
+.login-table .table-main button:hover {
+    background: #ffcba9;
+}
+
+.login-table .table-main .ck {
+    position: absolute;
+    left: 0px;
+    top: 178px;
+    height: 20px;
+    width: 20px;
+}
+
+.login-table .table-main span {
+    position: absolute;
+    left: 22px;
+    top: 178px;
+    font-size: 14px;
+    color: #838383;
+}
+.table-main span a {
+    color: #333;
+    display: inline-block;
+}
+
+.login-table .table-main .login-sevrve {
+    position: absolute;
+    top: 270px;
+    position: relative;
+}
+
+.table-main .login-sevrve a {
+    color: #ff5c00;
+    font-size: 17px;
+}
+
+.table-main .login-sevrve a:first-child {
+    position: absolute;
+    left: 0px;
+
+}
+
+.table-main .login-sevrve a:nth-child(2) {
+    position: absolute;
+    right: 0px;
+}
+
+.table-main .table-footer {
+    position: absolute;
+    top: 330px;
+    left: -20px;
+    width: 360px;
+}
+
+.table-main .table-footer img {
+    width: 120%;
+}
